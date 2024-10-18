@@ -1,0 +1,113 @@
+/* Experience.css */
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.exp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.h2-exp {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.experience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+   padding: 0 20px;
+}
+
+.experience-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s ease-out;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.experience-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #ff4c60;
+  transform: skewY(-5deg);
+  transform-origin: left;
+}
+
+.experience-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.experience-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.duration {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .experience-card h4 {
+    font-size: 1.3rem;
+  }
+
+  .experience-card p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,154 @@
+
+.home {
+  height: 100vh;
+  /* background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+  background-size: cover;
+  background-position: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  padding: 20px;
+}
+
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   background-image: url(https://e1.pxfuel.com/desktop-wallpaper/41/898/desktop-wallpaper-portfolio-backgrounds-101-in-portfolio.jpg);
+    background-size: cover; 
+    background-position: center;
+    filter: blur(2px); 
+    z-index: -1; 
+    opacity: 1.8; 
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ff4c60;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+ 
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.home-content {
+  color: rgb(102, 252, 241);
+  z-index: 2;
+  margin-top: 50px; 
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary {
+  padding: 10px 25px;
+  background-color: #ff4c60;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff1c3d;
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .navbar ul li a {
+    font-size: 0.9rem;
+  }
+}
+
+
+.animated-string {
+  display: inline-block;
+  border-right: 2px solid black; /* Cursor effect */
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Cursor blinks */
+  }
+}

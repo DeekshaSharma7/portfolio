@@ -1,0 +1,116 @@
+/* Project.css */
+
+.project {
+    padding: 50px 0;
+    
+}
+
+
+.p-heading {
+    /* text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px; */
+    
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.p-heading span {
+    color: #ff6347; /* Example highlight color */
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-box {
+    position: relative;
+    width: 300px; /* Set a fixed width */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+.project-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the title under the card */
+}
+
+.project-titleO {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.project-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.project-box:hover .project-layer {
+    opacity: 1;
+}
+
+.project-layer h4 {
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.project-layer p {
+    
+    text-align: center;
+}
+
+.project-layer a {
+    color: #ff6347;
+    font-size: 15px;
+}
+
+
+.project-links {
+    display: flex;
+    gap: 17px; /* Space between links */
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #f7fdfe; /* Link color */
+    font-weight: bold; /* Make links bold */
+}
+
+.project-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
