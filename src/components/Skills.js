@@ -270,8 +270,9 @@ import "../styles/Skills.css"; // Custom CSS
 
 const Skills = () => {
   return (
-    <div className="skills-section">
-      <h1 className="title">Tech Skills</h1>
+    <div className="skills-section" id="skills">
+      {/* <h1 className="title">Tech Skills</h1> */}
+      <h2 className="h2-contact">TECH SKILLS</h2>
 
       <div className="skills-grid">
         {/* Frontend Section */}

@@ -1,0 +1,137 @@
+/* src/styles/Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  backdrop-filter: blur(10px); /* Adjust blur intensity as desired */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.navbar-menu li {
+  margin: 0 1rem;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive styles for medium screens (tablets) */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .navbar-menu {
+    gap: 0.5rem; /* Reduce space between menu items */
+  }
+}
+
+/* Responsive styles for small screens (mobile) */
+@media (max-width: 768px) {
+  .navbar-container {
+    justify-content: space-between;
+  }
+
+  .navbar-menu {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust depending on navbar height */
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .navbar-menu.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .navbar-toggle {
+    display: block; /* Show toggle button on small screens */
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 0.5rem;
+  }
+
+  .navbar-logo {
+    width: 40px; /* Smaller logo */
+    height: 40px;
+  }
+
+  .navbar-menu {
+    gap: 0.5rem;
+  }
+
+  .navbar-menu li {
+    margin: 0.5rem 0;
+  }
+}
+
+
+/* src/styles/Navbar.css */
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  transition: all 0.3s ease; /* Optional transition for smooth opening */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust depending on navbar height */
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .navbar-menu.open {
+    display: flex; /* Show menu when open */
+  }
+}

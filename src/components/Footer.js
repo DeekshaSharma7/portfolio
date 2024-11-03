@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <p>&copy; 2024 Deeksha Sharma. All rights reserved.</p>
+          <p>&copy; 2024   Deeksha Sharma</p>
           <div className="social-links">
             <a
               href="https://www.linkedin.com/in/deeksha-sharma10782/"

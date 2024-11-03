@@ -26,6 +26,12 @@
 .text-container {
   flex: 1; /* Half screen width */
   padding: 40px;
+  margin-right: 15px;
+}
+
+.about-para{
+  font-size: 16px;
+  margin: 40px;
 }
   
 
@@ -48,7 +54,7 @@ p {
   display: inline-block;
   margin: 0 10px; /* Space between buttons */
   padding: 12px 30px; /* Button padding */
-  background-color: #28a745; /* Green background color */
+  background-color: #3e4458; 
   color: white;
   font-size: 1rem;
   font-weight: bold; /* Bold font for buttons */

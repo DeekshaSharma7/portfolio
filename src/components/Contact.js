@@ -152,7 +152,7 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <div className="contact-container">
-        <h2 className="h2-contact">Contact Me</h2>
+        <h2 className="h2-contact">CONTACT ME</h2>
         <div className="contact-info">
           <a
             href="https://www.google.com/maps/place/1234+Street+Name,+City,+Country"

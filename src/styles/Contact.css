@@ -24,7 +24,7 @@
   font-size: 2.8rem;
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
-  color: #000;
+  color: #fffffe;
   letter-spacing: 1px;
 }
 
@@ -40,13 +40,13 @@
   align-items: center;
   gap: 5px;
   font-size: 1.3rem;
-  color: #000;
+  color: #ddd;
   text-decoration: none;
 }
 
 .contact-item svg {
   font-size: 1.5rem;
-  color: #000;
+  color: #ddd;
 }
 
 .contact-item p {

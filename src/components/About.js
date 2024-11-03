@@ -191,17 +191,17 @@
 
 import React from "react";
 import "../styles/About.css";
-import about from "../assets/about.jpg"; // Ensure this path is correct
+import about from "../assets/about.jpeg"; // Ensure this path is correct
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="photo-container">
         <img src={about} alt="Deeksha Sharma" className="profile-photo" />
       </div>
       <div className="text-container">
         <h2>About Me</h2>
-        <p>
+        <p className="about-para">
           Hi there! I am Deeksha Sharma
           <br /> <br /> A passionate Software Developer, born and brought up in
           India. I am a Full Stack Developer with JavaScript, React.js, Redux,
@@ -220,7 +220,7 @@ const About = () => {
             Let's Talk
           </a>
           <a
-            href="/path/to/your-resume.pdf"
+            href="https://drive.google.com/file/d/1lYEbSnhK1b8ijtUT3CJeelWrj-71Pb5j/view?usp=sharing"
             className="btn"
             target="_blank"
             rel="noopener noreferrer"

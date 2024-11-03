@@ -93,8 +93,8 @@ const Education = () => {
   ];
 
   return (
-    <section className="education-section">
-      <h2>Education</h2>
+    <section className="education-section" id="education">
+      <h2 className="h2-contact">EDUCATION</h2>
 
       <div className="education-list">
         {educationList.map((item, index) => (
